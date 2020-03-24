@@ -19,17 +19,17 @@ ol, ul {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 1px solid #d4f8e8;
   float: left;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 150px;
+  height: 150px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 150px;
 }
 
 .square:focus {
@@ -47,4 +47,40 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.ui.teal.button, .ui.teal.buttons .button {
+  background-color: #00b5ad;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+  padding: 1em;
+  margin: 3px;
+}
+
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #a6b1e1;
+  font-weight: bold;
+}
+
+h2 {
+  color: #f67575;
+}
+
+h1 {
+  color: #1eb2a6;
+}
+
+.square{
+  background: #7f78d2;
+  color: #d4f8e8;
 }
